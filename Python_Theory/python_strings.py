@@ -195,6 +195,42 @@ isdecimal() = Returns True if all characters in the string are decimals
 isdigit() = Returns True if all characters in the string are digits
 
 isidentifier() = Returns True if the string is an identifier
+
+islower() = Returns True if all characters in the string are lower case
+
+isnumeric() = Returns True if all characters in the string are numeric
+
+isprintable() = Returns True if all characters in the string are printable
+
+isspace() = Returns True if all characters in the string are whitespaces
+
+istitle() = Returns True if the string follows the rules of a title
+
+isupper() = Returns True if all characters in the string are upper case
+
+join() = Joins the elements of an iterable to the end of the string
+
+lower() = Converts a string into lower case
+
+partition() = Returns a tuple where the string is parted into three parts
+
+replace() = Returns a string where a specified value is replaced with a specified value
+
+rfind() = Searches the string for a specified value and returns the last position of where it was found, it returns -1 if not found
+
+rindex() = Searches the string for a specified value and returns the last position of where it was found, if not found it gives value error
+
+split() = Splits the string at the specified separator, and returns a list
+
+startswith() = Returns true if the string starts with the specified value
+
+strip() = Returns a trimmed version of the string
+
+swapcase() = Swaps cases, lower case becomes upper case and vice versa
+
+title() = Converts the first character of each word to upper case
+
+upper() = Converts a string into upper case
 """
 
 # Length of String
@@ -270,3 +306,76 @@ print(string_isdigit.isdigit())
 # Example of isidentifier
 string_isidentifier = "123Hello"
 print (string_isidentifier.isidentifier())
+
+# Example of islower
+string_islower = "Hello World"
+print (string_islower.islower())
+
+# Example of isnumeric
+string_isnumeric = "1234565"
+print (string_isnumeric.isnumeric())
+
+# Example of isprintable
+string_isprintable = ""
+print (string_isprintable.isprintable())
+
+# Example of isspace
+string_isspace = "Python 12345"
+print (string_isspace.isspace())
+
+# Example of istitle
+string_istitle = "hello python"
+print (string_istitle.istitle())
+
+# Example of isupper
+string_isupper = "HELLO PYTHON"
+print (string_isupper.isupper())
+
+# Example of join
+string_first= "Hello"
+string_second = "Python"
+print(" ".join([string_first,string_second]))
+
+# Example of lower
+string_lower = "HELLOW PYTHON"
+print (string_lower.lower())
+
+# Example of partition
+string_partition = "Hello to Python"
+print(string_partition.partition("to"))
+
+# Example of replace
+string_replace = "Hello to Java"
+print (string_replace.replace("Java","Python"))
+
+# Example of rfind
+string_rfind = "Hello Python"
+print (string_rfind.rfind('a'))
+
+# Example of rindex
+string_rindex = "Hello Python"
+print (string_rindex.rindex("P"))
+
+# Examaple of split
+string_split = "Hello Python"
+print (string_split.split())
+
+# Example of startswith
+string_startswith = "Hello Python"
+print (string_startswith.startswith('H'))
+
+# Example of strip
+string_strip = " Hello Python "
+print (string_strip.strip())
+
+# Example of swapcase
+string_swapcase = "Hello Python"
+print (string_swapcase.swapcase())
+
+# Example of title
+string_title = "hello python"
+print (string_title.title())
+
+# Example of upper
+string_upper = "hello python"
+print (string_upper.upper())
