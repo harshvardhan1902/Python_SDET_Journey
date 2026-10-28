@@ -92,6 +92,10 @@ print (string_slice[2:])
 # Negative Slicing
 print (string_slice[-5:-2])
 
+# Reversing a string
+string_reverse = "Hello Python"
+print (string_reverse[::-1])
+
 # We have + operator to concatenate two strings
 a = "Hello"
 b = "World"
